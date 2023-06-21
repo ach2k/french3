@@ -1,0 +1,51 @@
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  background-color: #ccc;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  height: 500px;
+  max-height: 500px;
+  /* width: 400px;
+  max-width: 500px; */
+  -webkit-box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+  box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3) ;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /* text-align: center; */
+  /* gap: 50px; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.boxx {
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  /* margin: 40px; */
+  gap:200px;
+  display: block;
+}
+
+.grid > div {
+  flex-basis: calc(25% - 20px);
+}
+
+.box1 {
+  background-image: url(../bookAv4.jpg);
+  background-size: cover;
+  background-position: 0dvw;
+  background-position-y: 43px;
+  padding-top: 35px;
+  width: 390px;
+}
+
+.lessonsgrid {
+  font-weight: bold;
+  
+  font-size: 30px;
+}

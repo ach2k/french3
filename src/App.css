@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-family: cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.intro {
+  background-color: #34568B;
+  /* background-color: #1976d2; */
+  height: 200px;
+  /* background-image: url('./grey.jpg'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.intro-text {
+  position: absolute;
+  right:10px;
+  transform: translate(0px,30px);
+  /* font-family: Arial, sans-serif; */
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  background-color: rgb(206, 206, 206);
+  color: #34568B;
+  /* color: #1976d2; */
+  padding: 10px;
+  z-index: 1;
+  border-radius: 5px;
+  word-wrap: break-word;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-header {
+  position: absolute;
+  color: #ccc;
+  max-width: 400px;
+  transform: translate(50px, 70px);
+  font-size: 300%;
+  font-family:  'Kablammo', cursive;
 }
+
+.level-test {
+  background-color: #6B5B95;
+  background-color: white;
+  height: 250px;  
+  width: 25%;
+  color: #ccc;
+  font-size: 24px;
+  /* z-index: 1; */
+
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.level-test-text {
+  /* font-weight: bold; */
+  
+  
+  
+  color: #1976d2;
+  color: white;
+  color: #34568B;
+  border-radius: 10px;
+  /* background-color: #1976d2;
+  background-color: #ccc; */
+  padding: 9px;
+  /* box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 
+  0px 2px 2px 0px rgba(0,0,0,0.14),
+   0px 1px 5px 0px rgba(0,0,0,0.12); */
+
+  /* padding: 0; */
+  
+  
+  
+}
+
+.test {
+  display: inline-block;
+}
+
+.second { 
+  width: 75%; 
+  color: #34568B;
+  padding: 50px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  display: flex;
+  
+  align-items: center;
+}
+
+ .box {
+  display: flex; 
+  background-color: #ccc;
+}
+
+.mountain {
+  position: absolute;
+  transform: translate(400px, 50px);
+  color: #ccc;
+  z-index: 0;
+}
+
+.stars {
+  position: absolute;
+  transform: translate(550px, 80px);
+  color:#ccc
+
+}
+
+
+
+.hiking {
+  color: #ccc;
+  transform: translate(630px, 140px);
+  position: absolute;
+  
+}
+
+.greeting {
+  color: #ccc;
+  transform: translate(1000px, 82px);
+  position: absolute;
+
+}
+
+.greeting-arrow {
+  color:#ccc;
+  position: absolute;
+  transform: translate(1035px, 45px);
+
+}
+
+.grass {
+  color: #ccc;
+  position: absolute;
+  transform: translate(980px,152px)
+}
+
+.stack {
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
