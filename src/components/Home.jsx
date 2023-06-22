@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import "../App.css";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
@@ -14,24 +14,30 @@ import { createTheme } from '@mui/material/styles';
 import { purple, blue } from '@mui/material/colors';
 import { Transform, Translate } from '@mui/icons-material';
 import Grid from './Grids';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import About from './About';
+import { ContactUs } from './Contact';
+import Footer from './Footer';
 
 const Home = () => {
+
+  // useEffect(() => {
+  //   const handleZoom = () => {
+  //     const zoomLevel = Math.round(window.devicePixelRatio * 100);
+  //     while (zoomLevel < 100) {
+  //       // Adjust the zoom level back to the desired minimum value
+  //       document.body.style.zoom = '100%';
+  //     }
+  //   };
+    
+  //   window.addEventListener('resize', handleZoom);
+  //   handleZoom(); // Handle initial zoom level
+    
+  //   return () => {
+  //     window.removeEventListener('resize', handleZoom);
+  //   };
+  // }, []);
+
+
   return (
     <>
     <Navbar/>
@@ -52,7 +58,7 @@ const Home = () => {
       <div className='box'>
       <div className='level-test'>
     <span className='level-test-text'>You don't know your level?<br/>
-    Take a few minutes to find out!</span>
+    Check out the different levels! <span className='devworking1'><br/>Our developers are currently working on the test</span></span>
     <Stack className='stack' spacing={2} direction="row" >
      <Button sx={{ backgroundColor: "#34568B", transform:"Translate(0px,-35px)"}} className='test' variant="contained">Take the test</Button>
      <Button sx={{ color: "#34568B", borderColor: "#34568B", transform:"Translate(0px,-35px)" }} className='levels' variant="outlined" >Different levels</Button>
@@ -70,18 +76,11 @@ const Home = () => {
       </div>
       </div>
     </div>
-    <div><Grid/>sss</div>
-    <div>Articles related to the french language, like apps for studying etc. (advertisements related?)</div>
-    <div>Feedback with e-mail proposal, maybe also call it contact?</div>
+    <div><Grid/></div>
+    <div><About/></div>
+    <div><ContactUs/></div>
+    <div><Footer/></div>
 
-    
-
-    <footer>Footer</footer><div>
-
-
-    
-    
-    </div>
     
     </>
   )

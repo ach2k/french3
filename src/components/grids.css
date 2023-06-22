@@ -20,6 +20,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
   margin-top: 100px;
+  margin-bottom: 75px;
 }
 
 .boxx {
@@ -29,6 +30,16 @@
   /* margin: 40px; */
   gap:200px;
   display: block;
+  
+}
+
+.boxx {
+  /* ...existing styles... */
+  transition: transform 0.3s ease; /* Add transition property for smooth animation */
+}
+
+.boxx:hover {
+  transform: scale(1.1); /* Increase the scale to make it bigger */
 }
 
 .grid > div {
@@ -38,14 +49,53 @@
 .box1 {
   background-image: url(../bookAv4.jpg);
   background-size: cover;
-  background-position: 0dvw;
-  background-position-y: 43px;
-  padding-top: 35px;
+  /* background-position: 0dvw; */
+  background-position-x: -64px;
+  /* padding-top: 35px; */
+  
   width: 390px;
 }
 
-.lessonsgrid {
+.box2 {
+  background-image: url(../exercicesAv.png);
+  background-size: cover;
+  /* background-position: 0dvw; */
+  background-position-y:100px ;
+  /* padding-top:35px ; */
+  width: 390px;
+  background-repeat: no-repeat;
+}
+
+.box3 {
+  background-image: url(../bookAvJPG.JPG);
+  background-size: cover;
+  /* background-position: 0dvw; */
+  background-position-y:10px ;
+  /* padding-top:35px ; */
+  width: 390px;
+  background-repeat: no-repeat;
+  
+
+}
+
+.exgrid, .dictionarygrid, .lessonsgrid {
   font-weight: bold;
   
   font-size: 30px;
 }
+
+
+
+a {
+  text-decoration: none;
+  
+}
+a:active {
+  color:black
+}
+
+a:visited {
+  color: black;
+}
+
+

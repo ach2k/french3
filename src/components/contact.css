@@ -1,0 +1,81 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 87vh;
+  }
+  
+  .input-name,
+  .input-email,
+  .input-message {
+    display: block;
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+  }
+  
+  .input-message {
+    min-height: 300px;
+    min-width: 600px;
+  }
+  
+  .input-button {
+    display: block;
+    width: 600px;
+    background-color: #34568B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Add the following class to your form element */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-name,
+  .input-email,
+  .input-message,
+  .input-button {
+    text-align: center;
+  }
+  .input-button {
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .input-button:hover:after {
+    transform: translateX(0);
+  }
+  
+  .input-button:active {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-us {
+    font-size: 200%;
+  }

@@ -2,7 +2,7 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import Home from './components/Home';
-import Homess from './components/Homess';
+// import Homess from './components/Homess';
 import About from './components/About';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       
       <Route path='About' element={<About/>}/>
-      <Route path='Homess' element={<Homess/>}/>
+      {/* <Route path='Homess' element={<Homess/>}/> */}
     </Routes>
   );
 }

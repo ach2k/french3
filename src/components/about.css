@@ -1,0 +1,29 @@
+/* body {
+    background-color: #6B5B95;
+} */
+
+.twitter-logo {
+    color:#1DA1F2
+
+}
+
+.tiktok-logo {
+    color: black;
+}
+
+.youtube-logoo {
+    color: red;
+    
+}
+
+.social-grid {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.social-media {
+    gap: 20px;
+    justify-content: center;
+    
+}
+
